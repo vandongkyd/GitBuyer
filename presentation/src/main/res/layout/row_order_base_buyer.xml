@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+    <LinearLayout
+        android:id="@+id/cmd_show_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/layout_imv_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_background">
+
+            <com.fernandocejas.android10.order.presentation.utils.widgets.SquareImageView
+                android:id="@+id/imv_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#66000000"
+                android:scaleType="centerInside" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_imv_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_micro"
+            android:layout_weight="1"
+            android:background="@drawable/white_background">
+
+            <com.fernandocejas.android10.order.presentation.utils.widgets.SquareImageView
+                android:id="@+id/imv_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#66000000"
+                android:scaleType="centerInside" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_imv_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_micro"
+            android:layout_weight="1"
+            android:background="@drawable/white_background">
+
+            <com.fernandocejas.android10.order.presentation.utils.widgets.SquareImageView
+                android:id="@+id/imv_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/tv_image_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#BB000000"
+                android:gravity="center"
+                android:text="+2"
+                android:textColor="#FFF"
+                android:textSize="@dimen/text_headline" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_description_padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_normal" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="The Dyson Ball Complete upright vacuum has the strongest suction of any vacuum. It uses Radial Root Cyclone technology and a self-adjusting cleaner head to remove more dirt and microscopic allergens from the home. The brush bar bristles have been made shorter and stiffer allowing deeper carpet penetration to remove more dirt, while maintaining superior performance on hard floors. Ideal for allergy sufferers and pet owners, it has whole machine HEPA filtration and comes with extra cleaning tools."
+        android:textColor="#636363"
+        android:textSize="@dimen/text_small_body" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_margin="@dimen/padding_normal"
+        android:background="#e4e2e2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_from_deliver" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_normal"
+                android:text="United States Of America"
+                android:textColor="#A7A7A7"
+                android:textSize="@dimen/text_small_body" />
+
+            <TextView
+                android:id="@+id/tv_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_normal"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:text="Ho Chi Minh City"
+                android:textColor="#A7A7A7"
+                android:textSize="@dimen/text_small_body" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_no_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/order_no_offer_background"
+                android:padding="@dimen/padding_normal"
+                android:text="@string/offer_list_no_offer"
+                android:textColor="#565656"
+                android:textSize="@dimen/text_small_body"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/order_cancel_background"
+                android:padding="@dimen/padding_normal"
+                android:text="@string/offer_list_offer_cancel"
+                android:textColor="#F80D1E"
+                android:textSize="@dimen/text_small_body"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_offers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/tv_offer_more"
+                    android:layout_width="@dimen/lv_row_icon_width"
+                    android:layout_height="@dimen/lv_row_icon_width"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/offer_more_background"
+                    android:gravity="center"
+                    android:padding="@dimen/spacing_micro"
+                    android:text="+3"
+                    android:textSize="@dimen/text_small_body" />
+
+                <ImageView
+                    android:id="@+id/imv_offer_1"
+                    android:layout_width="@dimen/lv_row_icon_width"
+                    android:layout_height="@dimen/lv_row_icon_width"
+                    android:layout_marginRight="@dimen/lv_row_icon_width_anchor_padding"
+                    android:layout_toLeftOf="@id/tv_offer_more"/>
+
+                <ImageView
+                    android:id="@+id/imv_offer_2"
+                    android:layout_width="@dimen/lv_row_icon_width"
+                    android:layout_height="@dimen/lv_row_icon_width"
+                    android:layout_marginRight="@dimen/lv_row_icon_width_anchor_padding"
+                    android:layout_toLeftOf="@id/imv_offer_1"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

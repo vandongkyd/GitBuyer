@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_normal"
+            android:background="#F9F9F9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_normal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_from_deliver" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:text="United States Of America"
+                    android:textColor="#A7A7A7"
+                    android:textSize="@dimen/text_small_body" />
+
+                <TextView
+                    android:id="@+id/tv_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:text="Ho Chi Minh City"
+                    android:textColor="#A7A7A7"
+                    android:textSize="@dimen/text_small_body" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/v_description_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/order_detail_notes"
+            android:textSize="@dimen/text_small_body" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:padding="@dimen/padding_normal"
+            android:text="The Dyson Ball Complete upright vacuum has the strongest suction of any vacuum. It uses Radial Root Cyclone technology and a self-adjusting cleaner head to remove more dirt and microscopic allergens from the home. The brush bar bristles have been made shorter and stiffer allowing deeper carpet penetration to remove more dirt, while maintaining superior performance on hard floors. Ideal for allergy sufferers and pet owners, it has whole machine HEPA filtration and comes with extra cleaning tools."
+            android:textColor="#636363"
+            android:textSize="@dimen/text_small_body" />
+
+        <include
+            layout="@layout/content_base_fee_buyer"></include>
+
+    </LinearLayout>
+
+</LinearLayout>

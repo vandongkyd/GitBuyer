@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/make_title"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/text_large_body"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/make_oder_number"
+                        android:textSize="@dimen/text_small_x_body"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/tv_order_number_make"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_micro"
+                        android:text="#"
+                        android:textColor="#FFF"
+                        android:textSize="@dimen/text_small_x_body" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imv_make_offer_user_avatar"
+                android:layout_margin="@dimen/spacing_micro"
+                android:layout_gravity="right"
+                android:layout_width="@dimen/lv_row_icon_width"
+                android:layout_height="@dimen/lv_row_icon_width"
+                android:background="@drawable/circle_background"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_back"
+                style="@style/AppTheme.IconButton"
+                android:src="@drawable/ic_left_arrow_white" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/lyt_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/content_make_offer_buyer"></include>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+            <RelativeLayout
+                android:id="@+id/rlt_submit_make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#539b69"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/cmd_submit_make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offer_button"
+                        android:textColor="#FFF"
+                        android:textSize="@dimen/text_body" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow_white"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_submit_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/cmd_submit"
+                    android:padding="@dimen/padding_normal"
+                    android:text="@string/offer_button_price"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/text_body" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_progress" />
+
+    <include layout="@layout/view_retry" />
+</RelativeLayout>

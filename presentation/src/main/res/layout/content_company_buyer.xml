@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal">
+
+        <LinearLayout
+            android:id="@+id/lyt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/Linearicons.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\ue696"
+                android:textSize="@dimen/text_headline"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:text="@string/company_name"
+                    android:textColor="#C3C3C3"
+                    android:textSize="@dimen/text_small_body" />
+
+                <EditText
+                    android:id="@+id/edt_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/company_name_hint"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:paddingTop="@dimen/spacing_micro"
+                    android:singleLine="true"
+                    android:textColorHint="#676767"
+                    android:textSize="@dimen/text_body" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="#DFE1E1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/Linearicons.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\ue66b"
+                android:textSize="@dimen/text_headline"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:text="@string/company_website"
+                    android:textColor="#C3C3C3"
+                    android:textSize="@dimen/text_small_body" />
+
+                <EditText
+                    android:id="@+id/edt_company_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/company_website_hint"
+                    android:inputType="textWebEditText"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:paddingTop="@dimen/spacing_micro"
+                    android:singleLine="true"
+                    android:textColorHint="#676767"
+                    android:textSize="@dimen/text_body" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="#DFE1E1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/Linearicons.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\ue66b"
+                android:textSize="@dimen/text_headline"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:text="@string/company_email"
+                    android:textColor="#C3C3C3"
+                    android:textSize="@dimen/text_small_body" />
+
+                <EditText
+                    android:id="@+id/edt_company_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/company_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:paddingTop="@dimen/spacing_micro"
+                    android:singleLine="true"
+                    android:textColorHint="#676767"
+                    android:textSize="@dimen/text_body" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="#DFE1E1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/Linearicons.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\ue66b"
+                android:textSize="@dimen/text_headline"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:text="@string/company_address"
+                    android:textColor="#C3C3C3"
+                    android:textSize="@dimen/text_small_body" />
+
+                <EditText
+                    android:id="@+id/edt_company_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/company_address_hint"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:paddingTop="@dimen/spacing_micro"
+                    android:singleLine="true"
+                    android:textColorHint="#676767"
+                    android:textSize="@dimen/text_body" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7F7FA"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/company_license_business"
+            android:textColor="#676767"
+            android:textSize="@dimen/text_small_body" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/Linearicons.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\ue66b"
+                android:textSize="@dimen/text_headline"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:text="@string/company_license_number"
+                    android:textColor="#C3C3C3"
+                    android:textSize="@dimen/text_small_body" />
+
+                <EditText
+                    android:id="@+id/edt_company_license_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/company_license_number_hint"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:paddingTop="@dimen/spacing_micro"
+                    android:singleLine="true"
+                    android:textColorHint="#676767"
+                    android:textSize="@dimen/text_body" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="#DFE1E1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/Linearicons.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\ue66b"
+                android:textSize="@dimen/text_headline"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:text="@string/company_expire_date"
+                    android:textColor="#C3C3C3"
+                    android:textSize="@dimen/text_small_body" />
+
+                <EditText
+                    android:id="@+id/edt_company_expire_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/company_expire_date_hint"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:paddingTop="@dimen/spacing_micro"
+                    android:singleLine="true"
+                    android:textColorHint="#676767"
+                    android:textSize="@dimen/text_body" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="#DFE1E1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/Linearicons.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\ue66b"
+                android:textSize="@dimen/text_headline"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:text="@string/company_licence_document"
+                    android:textColor="#C3C3C3"
+                    android:textSize="@dimen/text_small_body" />
+
+                <EditText
+                    android:id="@+id/edt_company_licence_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/company_licence_document_hint"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:paddingTop="@dimen/spacing_micro"
+                    android:singleLine="true"
+                    android:textColorHint="#676767"
+                    android:textSize="@dimen/text_body" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="#DFE1E1" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

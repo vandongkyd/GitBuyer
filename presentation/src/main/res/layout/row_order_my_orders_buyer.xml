@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/spacing_normal"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_normal"
+    tools:ignore="UseCompoundDrawables">
+
+    <include layout="@layout/row_order_base_buyer"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/padding_normal1"
+        android:background="#e4e2e2" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lyt_with_offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_cash" />
+
+                <TextView
+                    android:id="@+id/tv_cash"
+                    fontPath="fonts/OpenSans-Bold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:text="$120.00"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_small_body"
+                    android:textStyle="bold"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_order_time" />
+
+                <TextView
+                    android:id="@+id/tv_order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:text="1 hours ago"
+                    android:textColor="#575757"
+                    android:textSize="@dimen/text_small_body" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_ship_fee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_ship_fee" />
+
+                <TextView
+                    android:id="@+id/tv_ship_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:text="$22.00"
+                    android:textColor="#4BCFD8"
+                    android:textSize="@dimen/text_small_body" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_time_receive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_time_receive" />
+
+                <TextView
+                    android:id="@+id/tv_time_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:text="12/24/2017"
+                    android:textColor="#6B6B6B"
+                    android:textSize="@dimen/text_small_body" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sts_1" />
+
+</LinearLayout>
